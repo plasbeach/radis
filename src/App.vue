@@ -1,20 +1,27 @@
 <script setup lang="ts">
 import Navigation from '@/components/Navigation.vue'
-import Title from '@/components/Title.vue'
+import HeroSection from '@/components/HeroSection.vue'
+import SoilDivider from '@/components/SoilDivider.vue'
+import AboutSection from '@/components/AboutSection.vue'
+import CrowdSection from '@/components/CrowdSection.vue'
+import PassesSection from '@/components/PassesSection.vue'
 </script>
 
 <template>
-  <div class="body">
-    <Navigation />
-    <Title />
-  </div>
+  <Navigation />
+  <main>
+    <HeroSection />
+    <SoilDivider />
+    <AboutSection />
+    <SoilDivider :flipped="true" />
+    <CrowdSection />
+    <SoilDivider />
+    <PassesSection />
+  </main>
 </template>
 
 <style scoped>
-.body {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+main {
+  overflow: hidden;
 }
 </style>
