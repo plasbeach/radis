@@ -1,0 +1,25 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  /* Site palette */
+  --color-brown-dark: #47311e;
+  --color-brown-dark-rgb: 71, 49, 30;
+  --color-brown-deep: #2e1e11;
+  --color-brown-mid: #3a2717;
+  --color-beige: #e5dac5;
+  --color-cream: #fff8ee;
+
+  /* Mascot colors (patradis & geradis) */
+  --mascot-body: #c22828;
+  --mascot-body-highlight: #d93535;
+  --mascot-leaf: #3d8a2e;
+  --mascot-leaf-highlight: #5aad42;
+  --mascot-root: #8c6644;
+  --mascot-outline: #2e1e11;
+}
