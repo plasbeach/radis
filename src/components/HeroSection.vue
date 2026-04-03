@@ -6,11 +6,11 @@ import Button from './Button.vue'
   <section class="hero">
     <img class="hero-logo" src="@/assets/logo_trop_swag_radis_inline.png" alt="Le Radis Festival" />
     <p class="hero-tagline">Musique · Nature · Convivialité</p>
-    <div class="hero-actions">
-      <Button label="Billetterie" />
-      <Button label="Programme" />
-    </div>
-    <img class="hero-mascot" src="@/assets/radis/mascotte_patradis_moins-mal_detoure.png" alt="" />
+    <img class="hero-mascot" src="@/assets/radis/mascotte_geradis.png" alt="" />
+    <p class="hero-description">
+      Nous avons le plaisir de vous inviter à la 4ème édition du Radis Festival,<br />
+      Le vendredi 21 et samedi 22 août 2026 !
+    </p>
   </section>
 </template>
 
@@ -19,9 +19,9 @@ import Button from './Button.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
-  padding: 6rem 2rem 0;
+  padding: 8rem 2rem 8rem;
   position: relative;
   overflow: hidden;
 }
@@ -36,7 +36,7 @@ import Button from './Button.vue'
   font-weight: 700;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #47311e;
+  color: var(--color-brown-dark);
   margin: 1.5rem 0 2.5rem;
   opacity: 0.8;
 }
@@ -49,11 +49,19 @@ import Button from './Button.vue'
   margin-bottom: 4rem;
 }
 
+.hero-description {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 600;
+  color: var(--color-brown-dark);
+  text-align: center;
+  margin-top: 1.5rem;
+  opacity: 0.85;
+}
+
 .hero-mascot {
-  width: min(320px, 55vw);
+  width: min(400px, 55vw);
   height: auto;
-  margin-top: auto;
-  transform: scaleX(-1);
-  filter: drop-shadow(0 8px 24px rgba(71, 49, 30, 0.2));
+  margin-top: 1rem;
+  filter: drop-shadow(0 8px 24px rgba(var(--color-brown-dark-rgb), 0.2));
 }
 </style>

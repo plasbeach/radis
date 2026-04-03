@@ -47,7 +47,7 @@ const passes = [
 
 <style scoped>
 .passes {
-  background-color: #e5dac5;
+  background-color: var(--color-beige);
   padding: 5rem 2rem 0;
   text-align: center;
   position: relative;
@@ -59,7 +59,7 @@ h2 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #47311e;
+  color: var(--color-brown-dark);
   margin-bottom: 0.5rem;
 }
 
@@ -68,7 +68,7 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #47311e;
+  color: var(--color-brown-dark);
   opacity: 0.6;
   margin-bottom: 3rem;
 }
@@ -82,9 +82,9 @@ h2 {
 }
 
 .pass-card {
-  background: #fff8ee;
-  border: 3px solid #47311e;
-  box-shadow: 6px 6px 0 #47311e;
+  background: var(--color-cream);
+  border: 3px solid var(--color-brown-dark);
+  box-shadow: 6px 6px 0 var(--color-brown-dark);
   border-radius: 4px;
   padding: 2rem 1.5rem;
   display: flex;
@@ -109,13 +109,13 @@ h3 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #47311e;
+  color: var(--color-brown-dark);
 }
 
 .pass-price {
   font-size: 2rem;
   font-weight: 900;
-  color: #47311e;
+  color: var(--color-brown-dark);
 }
 
 .pass-perks {
@@ -129,9 +129,9 @@ h3 {
 .pass-perks li {
   padding: 0.3rem 0;
   font-size: 0.9rem;
-  color: #47311e;
+  color: var(--color-brown-dark);
   opacity: 0.8;
-  border-bottom: 1px solid rgba(71, 49, 30, 0.15);
+  border-bottom: 1px solid rgba(var(--color-brown-dark-rgb), 0.15);
 }
 
 .pass-perks li::before {

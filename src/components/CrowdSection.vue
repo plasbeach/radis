@@ -1,9 +1,9 @@
 <template>
   <section class="crowd">
-    <img class="crowd-photo" src="@/assets/crowd.png" alt="Festival crowd" />
+    <img class="crowd-photo" src="@/assets/crowd.jpg" alt="Festival crowd" />
     <div class="crowd-overlay">
-      <h2>Une expérience hors du commun</h2>
-      <p>Des milliers de festivaliers, une seule famille.</p>
+      <h2>Venez nombreux !</h2>
+      <p>nous nous réjouissons de vous acceuillir :)</p>
     </div>
   </section>
 </template>
@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #e5dac5;
+  color: var(--color-beige);
   padding: 2rem;
 }
 

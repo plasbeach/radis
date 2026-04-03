@@ -10,8 +10,8 @@ defineProps({
 <style scoped>
 button {
   font-size: 30px;
-  background-color: #47311e;
-  color: #e5dac5;
+  background-color: var(--color-brown-dark);
+  color: var(--color-beige);
   text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
   display: inline-flex;
   align-items: center;
@@ -41,12 +41,12 @@ button:before {
   content: '';
   transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
   z-index: -1;
-  background-color: #47311e !important;
+  background-color: var(--color-brown-dark) !important;
   box-shadow:
-    0 -4px #2e1e11 inset,
-    0 4px #3a2717 inset,
-    -4px 0 #3a2717 inset,
-    4px 0 #2e1e11 inset;
+    0 -4px var(--color-brown-deep) inset,
+    0 4px var(--color-brown-mid) inset,
+    -4px 0 var(--color-brown-mid) inset,
+    4px 0 var(--color-brown-deep) inset;
 }
 
 button:after {

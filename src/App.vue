@@ -11,12 +11,9 @@ import PassesSection from '@/components/PassesSection.vue'
   <Navigation />
   <main>
     <HeroSection />
-    <SoilDivider />
     <AboutSection />
-    <SoilDivider :flipped="true" />
     <CrowdSection />
-    <SoilDivider />
-    <PassesSection />
+    <soil-divider />
   </main>
 </template>
 
