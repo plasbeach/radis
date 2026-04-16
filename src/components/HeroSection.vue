@@ -4,7 +4,7 @@ import Button from './Button.vue'
 
 <template>
   <section class="hero">
-    <img class="hero-logo" src="@/assets/logo_trop_swag_radis_inline.png" alt="Le Radis Festival" />
+    <img class="hero-logo" src="@/assets/Le_Radis_Festival_HD_v2_long.png" alt="Le Radis Festival" />
     <p class="hero-tagline">Musique · Nature · Convivialité</p>
     <img class="hero-mascot" src="@/assets/radis/mascotte_geradis.png" alt="" />
     <p class="hero-description">

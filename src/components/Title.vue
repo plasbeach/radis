@@ -3,7 +3,7 @@
 <template>
   <section>
       <img id="geradis" src="@/assets/radis/mascotte_geradis.png" alt="geradis"></img>
-      <img id="radis-logo" src="@/assets/logo_trop_swag_radis_inline.png" alt="Le Radis Festival"></img>
+      <img id="radis-logo" src="@/assets/Le_Radis_Festival_HD_v2_long.png" alt="Le Radis Festival"></img>
   </section>
 
 </template>
