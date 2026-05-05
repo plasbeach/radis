@@ -63,4 +63,12 @@ ul {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+@media (max-width: 899px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
 </style>

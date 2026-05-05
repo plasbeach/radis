@@ -64,4 +64,10 @@ import Button from './Button.vue'
   margin-top: 1rem;
   filter: drop-shadow(0 8px 24px rgba(var(--color-brown-dark-rgb), 0.2));
 }
+
+@media (max-width: 899px) {
+  .hero {
+    margin-top: 120px;
+  }
+}
 </style>
