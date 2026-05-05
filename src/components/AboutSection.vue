@@ -79,7 +79,7 @@ p {
 
 .about-map iframe {
   width: 100%;
-  height: 600px;
+  height: clamp(220px, 40vw, 600px);
   border-radius: 8px;
   border: 4px solid var(--color-beige);
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);

@@ -4,12 +4,20 @@ import Button from './Button.vue'
 
 <template>
   <section class="hero">
-    <img class="hero-logo" src="@/assets/Le_Radis_Festival_HD_v2_long.png" alt="Le Radis Festival" />
-    <p class="hero-tagline">Musique · Nature · Convivialité</p>
+    <img
+      class="hero-logo"
+      src="@/assets/Le_Radis_Festival_HD_v2_long.png"
+      alt="Le Radis Festival"
+    />
     <img class="hero-mascot" src="@/assets/radis/mascotte_geradis.png" alt="" />
     <p class="hero-description">
-      Nous avons le plaisir de vous inviter à la 4ème édition du Radis Festival,<br />
-      Le vendredi 21 et samedi 22 août 2026 !
+      Nous avons le plaisir de vous inviter à <br />la 4ème édition du Radis Festival<br />
+      <a
+        class="hero-date-link"
+        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Le+Radis+Festival&dates=20260821%2F20260823&details=4%C3%A8me+%C3%A9dition+du+Radis+Festival&location=Chemin+du+Vernex%2C+1721+Cournillens"
+        target="_blank"
+        rel="noopener"
+      >Le vendredi 21 et samedi 22 août 2026</a> !
     </p>
   </section>
 </template>
@@ -19,9 +27,9 @@ import Button from './Button.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   min-height: 100vh;
-  padding: 8rem 2rem 8rem;
+  padding: 8rem 2rem 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -32,9 +40,9 @@ import Button from './Button.vue'
 }
 
 .hero-tagline {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.6rem, 2.5vw, 1.5rem);
   font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: clamp(0.05em, 0.3em, 0.3em);
   text-transform: uppercase;
   color: var(--color-brown-dark);
   margin: 1.5rem 0 2.5rem;
@@ -50,16 +58,28 @@ import Button from './Button.vue'
 }
 
 .hero-description {
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-  font-weight: 600;
+  font-size: clamp(1.4rem, 4vw, 3rem);
+  font-weight: 700;
   color: var(--color-brown-dark);
   text-align: center;
-  margin-top: 1.5rem;
   opacity: 0.85;
+  line-height: 1.5;
+}
+
+.hero-date-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+
+.hero-date-link:hover {
+  opacity: 0.65;
 }
 
 .hero-mascot {
-  width: min(400px, 55vw);
+  width: clamp(120px, 40vw, 400px);
   height: auto;
   margin-top: 1rem;
   filter: drop-shadow(0 8px 24px rgba(var(--color-brown-dark-rgb), 0.2));

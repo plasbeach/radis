@@ -13,12 +13,12 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 500px;
+  min-height: clamp(220px, 40vw, 500px);
 }
 
 .crowd-photo {
   width: 100%;
-  height: 600px;
+  height: clamp(240px, 40vw, 600px);
   object-fit: cover;
   object-position: center;
   display: block;

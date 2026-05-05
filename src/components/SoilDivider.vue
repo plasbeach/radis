@@ -120,8 +120,14 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-size: clamp(0.7rem, 1.8vw, 1rem);
   div {
     text-align: center;
   }
+}
+
+.insta-link svg {
+  width: clamp(24px, 4vw, 42px);
+  height: clamp(24px, 4vw, 42px);
 }
 </style>
