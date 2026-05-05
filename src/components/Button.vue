@@ -9,7 +9,7 @@ defineProps({
 
 <style scoped>
 button {
-  font-size: 30px;
+  font-size: clamp(1rem, 2.5vw, 1.875rem);
   background-color: var(--color-brown-dark);
   color: var(--color-beige);
   text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
@@ -24,7 +24,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
   white-space: unset;
-  padding: 0.8rem 1.5rem;
+  padding: clamp(0.5rem, 1.2vw, 0.8rem) clamp(0.75rem, 2vw, 1.5rem);
   text-decoration: none;
   font-weight: 900;
   transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);

@@ -32,7 +32,7 @@ function openBenevoles() {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: clamp(1.1rem, 3vw, 2.5rem);
 }
 
 nav {
@@ -44,14 +44,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 2rem;
+  padding: clamp(0.4rem, 1vw, 0.75rem) clamp(1rem, 3vw, 2rem);
   background-color: var(--color-beige);
   border-bottom: 3px solid var(--color-brown-dark);
   box-shadow: 0 2px 0 var(--color-brown-deep);
 }
 
 .nav-logo {
-  height: 80px;
+  height: clamp(45px, 7vw, 80px);
   width: auto;
 }
 

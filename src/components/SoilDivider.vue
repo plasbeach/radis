@@ -113,7 +113,7 @@ const risenRight = ref(false)
 footer {
   position: relative;
   z-index: 200;
-  margin: -15rem 2rem 0 2rem;
+  margin: -15rem clamp(2rem, 10vw, 12rem) 0;
   color: var(--color-beige);
   padding: 5rem 0 2rem;
   display: flex;
