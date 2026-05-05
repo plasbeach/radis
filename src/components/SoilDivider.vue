@@ -18,11 +18,29 @@
     </div>
     <img src="@/assets/soil.png" alt="" class="soil-img" />
   </div>
+  <footer>
+    <div>
+      <p>Chemin du Vernex</p>
+      <p>1721 Cournillens</p>
+    </div>
+    <div>
+      <p>info@radisfestival.ch</p>
+      <p>+41 79 674 02 52</p>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/radis.festival/" target="_blank" rel="noopener" class="insta-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-
 defineProps<{ flipped?: boolean }>()
 
 const risenLeft = ref(false)
@@ -80,5 +98,30 @@ const risenRight = ref(false)
 
 .mascot.risen {
   transform: translateY(calc(-50% - 85px));
+}
+
+.insta-link {
+  color: inherit;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.insta-link:hover {
+  opacity: 0.7;
+}
+
+footer {
+  position: relative;
+  z-index: 200;
+  margin: -15rem 2rem 0 2rem;
+  color: var(--color-beige);
+  padding: 5rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    text-align: center;
+  }
 }
 </style>
