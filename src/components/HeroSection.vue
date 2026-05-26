@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import Button from './Button.vue'
+import { computed } from 'vue'
+
+const isApple = computed(() =>
+  /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)
+)
+
+const calendarHref = computed(() =>
+  isApple.value
+    ? '/radis-festival-2026.ics'
+    : 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Le+Radis+Festival&dates=20260821%2F20260823&details=4%C3%A8me+%C3%A9dition+du+Radis+Festival&location=Chemin+du+Vernex%2C+1721+Cournillens'
+)
 </script>
 
 <template>
@@ -14,7 +25,7 @@ import Button from './Button.vue'
       Nous avons le plaisir de vous inviter à <br />la 4ème édition du Radis Festival<br />
       <a
         class="hero-date-link"
-        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Le+Radis+Festival&dates=20260821%2F20260823&details=4%C3%A8me+%C3%A9dition+du+Radis+Festival&location=Chemin+du+Vernex%2C+1721+Cournillens"
+        :href="calendarHref"
         target="_blank"
         rel="noopener"
       >Le vendredi 21 et samedi 22 août 2026</a> !
@@ -28,7 +39,7 @@ import Button from './Button.vue'
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 8rem 2rem 4rem;
   position: relative;
   overflow: hidden;
@@ -87,7 +98,7 @@ import Button from './Button.vue'
 
 @media (max-width: 899px) {
   .hero {
-    margin-top: 120px;
+    padding-top: 120px;
   }
 }
 </style>

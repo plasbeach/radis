@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #e5dac5;
   font-family: 'Nunito', system-ui, sans-serif;

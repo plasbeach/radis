@@ -12,6 +12,7 @@
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "splide": "^0.0.1-security",
     "v-viewer": "^3.0.23",
     "viewerjs": "^1.11.7",

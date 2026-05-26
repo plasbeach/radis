@@ -5,6 +5,7 @@ import SoilDivider from '@/components/SoilDivider.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import CrowdSection from '@/components/CrowdSection.vue'
 import PassesSection from '@/components/PassesSection.vue'
+import Carrousel from '@/components/Carrousel.vue'
 </script>
 
 <template>
@@ -13,12 +14,10 @@ import PassesSection from '@/components/PassesSection.vue'
     <HeroSection />
     <AboutSection />
     <CrowdSection />
+    <Carrousel />
     <soil-divider />
   </main>
 </template>
 
 <style scoped>
-main {
-  overflow: hidden;
-}
 </style>

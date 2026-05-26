@@ -3,7 +3,7 @@
     <img class="crowd-photo" src="@/assets/crowd.jpg" alt="Festival crowd" />
     <div class="crowd-overlay">
       <h2>Venez nombreux !</h2>
-      <p>nous nous réjouissons de vous accueillir :)</p>
+      <p>Nous nous réjouissons de vous accueillir</p>
     </div>
   </section>
 </template>
