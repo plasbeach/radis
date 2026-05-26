@@ -58,13 +58,19 @@ h1 {
 
 @media (max-width: 600px) {
   #carrousel {
-    width: 100%;
-    margin: 5rem;
-
+    width: 92%;
+    margin: 1.5rem auto;
+    border-radius: 0.6rem;
   }
 
   .slide-img {
     aspect-ratio: 4 / 3;
+    max-height: 52vw;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin-top: 2.5rem;
   }
 }
 </style>
